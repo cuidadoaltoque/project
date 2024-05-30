@@ -1,0 +1,115 @@
+ <h1>quiz priaux</h1>
+            <div class="quiz-header">
+             <span>quiz</span>
+             <span class="header-score">puntaje 0/10</span>
+            </div>
+
+            <h2 class="question-text">a evaluación de una víctima en primeros auxilios?</h2>
+
+            <div class="option-list">
+                <span>A. Llamar al servicio de emergencia </span>
+            </div>
+            
+            <div class="option-list">
+                <span>B. Verificar la respuesta de la víctima</span>
+            </div>
+            
+            <div class="option-list">
+                <span>C. Comprobar la respiración</span>
+            </div>
+            
+            <div class="option-list">
+                <span>D. Controlar el sangrado </span>
+            </div>
+            </div>
+
+            <div class="quiz-footer">
+                <span class="question-total">1 de 20 preguntas</span>
+                <button class="next-btn">Siguiente</button>
+            </div>
+
+
+
+
+
+
+lo delcolor verde
+
+
+            .quiz-section {
+                position: relative;
+                left: -50%;
+                width: 100%;
+                background-color: green;
+                display: flex;
+                align-items: center;
+                z-index: 100;
+                transition: .8s ease-in-out;
+                transition-delay: .25s;
+                z-index: 100;
+             }
+
+
+             2.
+             “Conducta P.A.S.” que consiste en adoptar las siguientes medidas de primeros auxilios:
+             A. Preguntar, Actuar, Sanar
+             B. Proteger, Avisar, Socorrer
+             C. Protocolizar, Auxiliar, Situar
+             D. Prevenir, Aliviar, Solucionar
+
+             B ES CORRECTA
+
+
+             3.
+             Cuáles son las principales señales objetivas que se deben valorar cuando nos encontramos antes un herido?
+             A. Conciencia, respiración, pulso
+             B. Hemorragias, fracturas y quemaduras
+             C. Consciencia, respiración, pulso
+             D. Consciencia, fracturas y hemorragias
+
+             C ES CORRECTA 
+
+             4.
+             Qué es lo que NO debe hacerse ante una herida grave?
+             A. No se debe tocar la herida
+             B. Colocar encima una compresa estéril o paño limpio
+             C. Trasladar al herido a un centro apropiado
+             D. Quitar los cuerpos extraños visibles, aunque estén profundos
+
+             D CORRECTA 
+
+             5.  Cuál es la señal más común de un ataque cardíaco?
+             A. Dolor de cabeza severo
+             B. Dificultad para respirar
+             C. Dolor agudo en el abdomen
+             D. Dolor opresivo en el pecho
+
+             D CORRECTA 
+
+
+
+
+
+             
+.buttons button.restart{
+    color: aliceblue;
+    background: #2c5e66;
+}
+
+.buttons button.restart:hover{
+    background:#2c5e66;
+}
+
+.buttons button.quit{
+    color:aliceblue
+}
+
+.buttons button.quit:hover{
+    color: #2c5e66;
+    background: #81a3a8;
+}
+
+
+
+
+<span>tu puntaje es de 2 / 10</span>

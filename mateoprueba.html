@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videojuego de Quemaduras</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            text-align: center;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #d9534f;
+        }
+        button {
+            background-color: #5bc0de;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            margin: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #31b0d5;
+        }
+        .result {
+            font-size: 24px;
+            margin-top: 20px;
+        }
+        .play-again {
+            display: none;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>¡Cuidado al toque!</h1>
+        <p>Videojuego de Quemaduras</p>
+        <div id="question">
+            <p>Una persona tiene una quemadura leve, ¿qué deberías hacer primero?</p>
+            <button onclick="checkAnswer(true)">Enfriar con agua fría</button>
+            <button onclick="checkAnswer(false)">Aplicar mantequilla</button>
+        </div>
+        <div id="result" class="result"></div>
+        <div id="play-again" class="play-again">
+            <button onclick="playAgain()">Jugar de Nuevo</button>
+        </div>
+    </div>
+
+    <script>
+        function checkAnswer(isCorrect) {
+            let resultDiv = document.getElementById('result');
+            let playAgainDiv = document.getElementById('play-again');
+
+            if (isCorrect) {
+                resultDiv.textContent = "¡Correcto!";
+                resultDiv.style.color = 'green';
+            } else {
+                resultDiv.textContent = "¡Incorrecto!";
+                resultDiv.style.color = 'red';
+            }
+
+            document.getElementById('question').style.display = 'none';
+            playAgainDiv.style.display = 'block';
+        }
+
+        function playAgain() {
+            document.getElementById('question').style.display = 'block';
+            document.getElementById('result').textContent = '';
+            document.getElementById('play-again').style.display = 'none';
+        }
+    </script>
+</body>
+</html>
